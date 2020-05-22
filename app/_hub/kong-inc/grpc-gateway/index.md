@@ -7,7 +7,7 @@ categories:
 
 type: plugin
 
-desc: Access gRPC services through HTTP REST.
+desc: Access gRPC services through HTTP REST
 description: |
   A Kong plugin to allow access to a gRPC service via HTTP REST requests
   and translate requests and responses in a JSON format. Similar to 
@@ -35,7 +35,7 @@ params:
       default:
       value_in_examples: path/to/hello.proto
       description: |
-        Describes the gRPC types and methods,
+        Describes the gRPC types and methods.
         [HTTP configuration](https://github.com/googleapis/googleapis/blob/fc37c47e70b83c1cc5cc1616c9a307c4303fe789/google/api/http.proto)
         must be defined in the file.
 
@@ -72,7 +72,7 @@ services:
         proto: path/to/hello.proto
 ```
 
-Same thing via the Admin API:
+Sample configuration via the Admin API:
 
 ```bash
 $ # add the gRPC service
