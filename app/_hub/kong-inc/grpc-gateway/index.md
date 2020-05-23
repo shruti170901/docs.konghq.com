@@ -127,6 +127,8 @@ message HelloReply {
 }
 ```
 
+Note the `option (google.api.http) = {}` section is required.
+
 You can send following requests to Kong that translates to corresponding gRPC requests:
 
 ```bash
