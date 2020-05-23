@@ -95,7 +95,7 @@ $ curl -XPOST localhost:8001/routes/web-service/plugins \
 
 The proto file must contain the [HTTP REST to gRPC mapping rule](https://github.com/googleapis/googleapis/blob/fc37c47e70b83c1cc5cc1616c9a307c4303fe789/google/api/http.proto).
 
-In the example we use the following mapping (note the option (google.api.http) = {} section):
+The example uses the following mapping:
 
 ```protobuf
 syntax = "proto2";
@@ -127,7 +127,7 @@ message HelloReply {
 }
 ```
 
-We can send following requests to Kong that translates to corresponding gRPC requests:
+You can send following requests to Kong that translates to corresponding gRPC requests:
 
 ```bash
 curl -XGET localhost:8000/v1/messages/Kong2.0
@@ -145,7 +145,7 @@ curl -XPOST localhost:8000/v1/messages/Kong2.0 -d '{"name":"kong2.0"}'
 
 All syntax defined in [Path template syntax](https://github.com/googleapis/googleapis/blob/fc37c47e70b83c1cc5cc1616c9a307c4303fe789/google/api/http.proto#L225) is supported.
 
-Currently only unary requests are supported, streaming requests are not supported.
+Currently only unary requests are supported; streaming requests are not supported.
 
 
 [Kong]: https://konghq.com
