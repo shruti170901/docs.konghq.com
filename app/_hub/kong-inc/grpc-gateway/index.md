@@ -4,7 +4,7 @@ publisher: Kong Inc.
 
 categories:
   - transformations
-
+alpha: true
 type: plugin
 
 desc: Access gRPC services through HTTP REST
